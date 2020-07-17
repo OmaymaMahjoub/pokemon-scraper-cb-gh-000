@@ -1,5 +1,6 @@
 class Pokemon
 
+  attr_accessor :id,:name,:db,:type
   @@all=Array.new
   def initialize(id:,name:,type:,db:)
     @name=name
