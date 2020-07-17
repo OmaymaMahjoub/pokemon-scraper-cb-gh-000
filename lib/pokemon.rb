@@ -1,11 +1,11 @@
 class Pokemon
 
   @@all=Array.new
-  def initialize(id,name,type,db)
+  def initialize(id:,name:,type:,db:)
     @name=name
     @id=id
     @type=type
-
+    @db=db
   end
 
   def self.save(id,name,type,connect_db)
